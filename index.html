@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>IMU Preintegration</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><a href="index.html">시각-관성을 활용해 최대한 후험적이고 효율적으로 추정하기 위한 다양체상의 IMU 예비(豫備, pre)적분
+  <br>IMU Preintegration on Manifold for Efficient Visual-Inertial Maximum-a-Posteriori Estimation</a></h1>
+  <div id="grid">
+  <ol>
+    <li><a href="1.html">Philosophy</a></li>
+    <li><a href="2.html">Mathematics</a></li>
+    <li><a href="3.html">ComputerScience</a></li>
+    <li><a href="4.html">Else</a></li>
+  </ol>
+  <div id="article">
+<p>요약— 단안 시각-관성 내비게이션(monocular visual-inertial navigation, 이하: ‘VIN’)에 관한 작금의 여러 결과물은 다음 사실을 보인다. 최적화에 기반한 접근은 과거 상태를 재선형화(relinearize)할 수 있다는 점에서 필터링 방법을 능가한다. 하지만 이런 진전은 계산 복잡도 증가라는 값을 치른다. 본 논문은 선별된 키프레임들 간의 관성 측정들을 예비적분하여 위 문제에 접근한다. 예비적분으로 인해 우리는 수백 가지 관성 측정을 단일의 상대적 모션 제한으로 적절하게 요약할 수 있다. 우리가 위 문제에 처음으로 기여하는 바가 바로 예비적분 이론이다. 이 예비적분 이론은 특수직교군(特殊直交群, rotation group)의 다양체 구조에 적절하게 접근할 뿐만 아니라 불확도 전파(uncertainty propagation) 또한 신중하게 다룬다. 측정들은 좌표조각(local frame)으로 적분된다. 따라서 선형화 지점이 변할 때마다 적분할 필요가 없다. 더불어 뒤늦은 편향 보정(bias corrections) 또한 허락된다. 우리가 다음으로 기여하는 바는 다음 사실을 보이는 것이다. 팩터 그래프(factor graphs)의 통합적 프레임워크 아래, 예비적분된 IMU 모델은 시각-관성 파이프라인으로 매끄럽게 적분될 수 있다. 이로 인해 시각적 측정에 무구조(無構造, structureless) 모델을 사용할 수 있다. 나아가 계산(computation)을 가속한다. 우리가 세 번째로 공헌하는 바는 단안 VIN 파이프라인에 대한 면밀한 평가다. 실험 결과는 우리의 시스템이 매우 빠르다는 것을 보장한다. 또 경쟁적인 최첨단 필터링 및 최적화 알고리즘의 정확도 면에서 우월성을 입증한다. 여기에는 구글 탱고(Google Tango)를 [1] 비롯한 기성 시스템도 포함된다.</p>
+
+</div>
+</div>
+</body>
+</html>
