@@ -26,7 +26,31 @@ ol{
   margin:0;
   padding:20px;
 }
-
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Noto Serif KR', serif;
+}
+::selection {
+  color: black;
+  background: rgb(248, 220, 9);
+}
+a:link{
+  text-decoration-line: none;
+  color: rgb(248, 220, 9);
+}
+a:visited{
+  text-decoration-line: none;
+  color: rgb(248, 220, 9);
+}
+a:hover{
+  text-decoration-line: none;
+  color: rgb(248, 220, 9);
+}
+a:active{
+  text-decoration-line: none;
+  color: rgb(248, 220, 9);
+}
 #grid{
 
   font-family: 'Noto Serif KR', serif;
